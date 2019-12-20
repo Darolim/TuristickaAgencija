@@ -22,7 +22,6 @@ public class registracioniServlet extends HttpServlet {
 		String password = request.getParameter("password");
 		String repeatedPassword = request.getParameter("repeatedPassword");
 		
-		
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -31,6 +30,7 @@ public class registracioniServlet extends HttpServlet {
 		String userName = request.getParameter("userName");
 		String password = request.getParameter("password");
 		String repeatedPassword = request.getParameter("repeatedPassword");
+	
 	}
 
 }
