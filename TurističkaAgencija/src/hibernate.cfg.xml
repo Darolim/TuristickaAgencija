@@ -30,7 +30,7 @@
 		
 		<!-- Names the annotated entity class -->
 		<mapping class="model.User"/>
-		<mapping class="modell.Transport"/>
+		<mapping class="model.Transport"/>
 		<mapping class="model.Destinacija"/>
 		<mapping class="model.Racun"/>
 		<mapping class="model.Transakcije"/>

@@ -30,9 +30,18 @@ public class registracioniServlet extends HttpServlet {
 		
 		if (proveraPassworda) {
 			
-			response.sendRedirect("Index.html");
+			boolean daLiJeUpisaoUseraUbazu = service.upisiUseraUBazu(userName, password);
 			
-		}else {
+			if(daLiJeUpisaoUseraUbazu) {
+				
+				response.sendRedirect("htmlFajlovi/uspesnaRegistracija.html");
+			
+			}else {
+				
+				response.sendRedirect("htmlFajlovi/registracija.html");
+			}
+			
+			}else {
 			
 			response.sendRedirect("htmlFajlovi/registracija.html");
 			
