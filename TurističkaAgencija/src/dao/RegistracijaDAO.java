@@ -8,14 +8,9 @@ import model.User;
 
 public class RegistracijaDAO {
 
-	public boolean upisiUseraUBazu(String userName, String password) {
+	public boolean upisiUseraUBazu(User user) {
 		
 		SessionFactory factory=new Configuration().configure().buildSessionFactory();
-
-		User user= new User();
-		
-			user.setUserName(userName);
-			user.setPassword(password);
 			
 			Session sesija = factory.openSession();
 				sesija.beginTransaction();
