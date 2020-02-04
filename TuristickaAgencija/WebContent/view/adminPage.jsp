@@ -13,10 +13,20 @@
 
 <div id ="plavaCrta"> LOGO </div>
 	<%
+		
 		User user = (User)session.getAttribute("userIzBaze");
+	
 	%>
 	
 	<h1> Hello <%=user.getUserName() %></h1>
+	
+	<a href ="../SviUseriServlet"> 
+	
+	<img src="../slike/Globus.jpg">
+	
+	</a>
+	
+	<a href = "../index.html"> back to index</a>
 
 </body>
 </html>
